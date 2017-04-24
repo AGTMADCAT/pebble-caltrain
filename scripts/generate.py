@@ -4,6 +4,7 @@ import csv
 import struct
 import time
 import datetime
+import sys
 
 
 def generate_files(source_dir, target_dir):
@@ -145,4 +146,4 @@ def generate_files(source_dir, target_dir):
 
 
 if __name__ == "__main__":
-    generate_files("/Users/katharine/Downloads/GTFS Caltrain Devs/", "/Users/katharine/projects/pebble-caltrain/resources/data/")
+    generate_files(sys.argv[1], sys.argv[2])
