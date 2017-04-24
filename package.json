@@ -1,0 +1,75 @@
+{
+  "version": "1.10.0",
+  "author": "Katharine",
+  "private": true,
+  "dependencies": {},
+  "keywords": [
+    "pebble-app"
+  ],
+  "pebble": {
+    "sdkVersion": "3",
+    "resources": {
+      "media": [
+        {
+          "menuIcon": true,
+          "type": "bitmap",
+          "name": "IMAGE_MENU_ICON",
+          "file": "images/caltrain-icon.png"
+        },
+        {
+          "type": "raw",
+          "name": "DATA_TRIPS",
+          "file": "data/trips.dat"
+        },
+        {
+          "type": "raw",
+          "name": "INDEX_TRIP_STOPS",
+          "file": "data/trip_index.dat"
+        },
+        {
+          "type": "raw",
+          "name": "DATA_TIMES",
+          "file": "data/times.dat"
+        },
+        {
+          "type": "raw",
+          "name": "DATA_STOPS",
+          "file": "data/stops.dat"
+        },
+        {
+          "type": "raw",
+          "name": "INDEX_STOP_TIMES",
+          "file": "data/stop_index.dat"
+        },
+        {
+          "type": "raw",
+          "name": "DATA_CALENDAR",
+          "file": "data/calendar.dat"
+        }
+      ]
+    },
+    "projectType": "native",
+    "uuid": "40df227e-4715-4369-82ca-ec9de58889ea",
+    "messageKeys": {
+      "POS_LON": 2,
+      "POS_LAT": 3,
+      "COMMAND_ID": 1
+    },
+    "enableMultiJS": true,
+    "displayName": "Caltrain",
+    "watchapp": {
+      "onlyShownOnCommunication": false,
+      "hiddenApp": false,
+      "watchface": false
+    },
+    "targetPlatforms": [
+      "aplite",
+      "basalt",
+      "chalk"
+    ],
+    "capabilities": [
+      "location"
+    ]
+  },
+  "name": "Caltrain"
+}
